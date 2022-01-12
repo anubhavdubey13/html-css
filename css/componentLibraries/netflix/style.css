@@ -1,0 +1,25 @@
+
+
+body {
+    margin: 0;
+}
+
+.firstScreen {
+    position: relative;
+    text-align: center;
+    background: black;
+}
+
+.topLeftName, .languageSelector, .topRightSignIn {
+    position: absolute;
+}
+
+#topSectionImg {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 1.891;
+    opacity: 0.5;
+}
+
+https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
