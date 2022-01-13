@@ -10,16 +10,79 @@ body {
     background: black;
 }
 
-.topLeftName, .languageSelector, .topRightSignIn {
+.topLeftName, .languageSelector, .topRightSignIn, .firstSignUp {
     position: absolute;
+    z-index: 1;
 }
 
 #topSectionImg {
     width: 100%;
     display: block;
     overflow: hidden;
-    aspect-ratio: 1.891;
+    z-index: 0;
+    aspect-ratio: 1.8;
     opacity: 0.5;
 }
 
-https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
+.topLeftName {
+    margin: 1rem;
+    font-size: 4rem;
+    color: red;
+}
+
+.languageSelector {
+    margin-left: 70rem;
+    margin-top: 2rem;
+}
+
+.topRightSignIn {
+    margin-left: 80rem;
+    margin-top: 2rem;
+}
+
+.firstSignUp {
+    margin-top: -40rem;
+    margin-left: 24rem;
+    max-width: 50%;
+    font-family: sans-serif;
+}
+
+#headline {
+    color: white;
+    font-size: 4rem;
+    margin: 0;
+}
+
+#subheadline {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.75rem;
+}
+
+.containerForm {
+    margin-top: 3rem;
+}
+
+#formHeading {
+    color: white;
+    font-weight: lighter;
+}
+
+#inputEmail {
+    width: 30rem;
+    height: 3.67rem;
+    margin-right: 0;
+    vertical-align: bottom;
+}
+
+#btnInputEmail {
+    width: 15rem;
+    height: 4rem;
+    margin-left: -5px;
+    margin-top: 3px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+/*ttps://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
