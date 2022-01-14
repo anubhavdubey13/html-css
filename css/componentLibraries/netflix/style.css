@@ -85,4 +85,35 @@ body {
     color: white;
     font-size: 2rem;
 }
+
+#btnSignIn {
+    background-color: red;
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    margin-left: 6rem;
+}
+
+#language {
+    background-color: black;
+    opacity: 0.9;
+    border: 1px solid white;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 0.15rem;
+    font-size: 1rem;
+    margin-left: 9rem;
+}
+
+.topLeftName {
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-stretch: condensed;
+
+}
 /*ttps://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
