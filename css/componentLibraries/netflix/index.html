@@ -12,14 +12,8 @@
     <div class="firstScreen">
         <header class="topBanner">
             <div class="topLeftName">
-                <svg viewBox="0 0 500 500"></svg>
-                    <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-                    <text width="500">
-                    <textPath xlink:href="#curve">
+                    <!--will come back to svg and path someother time-->
                         NETFLIX
-                    </textPath> 
-                </text>
-                </svg>
             </div>
             <div class="languageSelector">
                 <label for="language"></label>
@@ -47,6 +41,17 @@
             </div>
         </section>
     </div>
-    
+    <div class="secondScreen">
+        <section class="secondScreenText">
+            <h3 id="secondScreenTextHeadline">Enjoy on your TV</h3>
+            <h4 id="secondScreenTextPara">
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </h4>
+        </section>
+        <section class="secondScreenMedia">
+            <img src="./images/tv.png" alt="TV Image containing video" id="secondScreenTV"/>
+            <video src="./images/video-tv-in-0819.m4v" id="secondScreenVid" autoplay playsinline loop muted></video>
+        </section>
+    </div>
 </body>
 </html>

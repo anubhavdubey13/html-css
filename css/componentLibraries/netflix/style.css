@@ -2,12 +2,13 @@
 
 body {
     margin: 0;
+    background-color: black;
 }
 
 .firstScreen {
     position: relative;
     text-align: center;
-    background: black;
+    border-bottom: 10px solid gray;
 }
 
 .topLeftName, .languageSelector, .topRightSignIn, .firstSignUp {
@@ -116,4 +117,20 @@ body {
     font-stretch: condensed;
 
 }
-/*ttps://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio
+
+.secondScreen {
+    color: white;
+}
+
+div .secondScreen{
+    float: left; /* couldnt figure out any other way*/
+    
+}
+
+.secondScreenText, .secondScreenMedia {
+    float: left;
+    width: 50%;
+    margin-top: 4rem;
+}
+
+/*https://stackoverflow.com/questions/38353388/inserting-a-video-over-an-image-with-css-and-html
