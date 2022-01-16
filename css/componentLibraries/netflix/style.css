@@ -120,17 +120,43 @@ body {
 
 .secondScreen {
     color: white;
+    border-bottom: 10px solid gray;
+    padding-bottom: 35rem;
 }
 
 div .secondScreen{
     float: left; /* couldnt figure out any other way*/
-    
 }
 
 .secondScreenText, .secondScreenMedia {
     float: left;
-    width: 50%;
+    width: 50%; 
+    
+}
+
+.secondScreenText {
     margin-top: 4rem;
 }
 
+#secondScreenTextHeadline {
+    margin-left: 4rem;
+    font-size: 4rem;
+    
+}
+
+#secondScreenTextPara {
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+
+#secondScreenTV {
+    margin-top: 2rem;
+    z-index: 1;
+    position: absolute;
+}
+
+#secondScreenVid {
+    margin-top: 8rem;
+    margin-left: 5rem;
+}
 /*https://stackoverflow.com/questions/38353388/inserting-a-video-over-an-image-with-css-and-html
