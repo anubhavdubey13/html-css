@@ -1,0 +1,62 @@
+* {
+    margin:0;
+}
+
+header {
+    text-align: center;
+}
+
+.thisGoesUp, .thisGoesDown, .thisGoesLeft, .thisGoesRight {
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+
+}
+
+@keyframes upwards {
+    from {transform: translateY(1rem); background-color: black; color: white;}
+    to {transform: translateY(0rem);}
+}
+
+.thisGoesUp {
+    animation-name: upwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* I could have used animation-direction: reverse here*/
+@keyframes downwards {
+    from {transform: translateY(-1rem); background-color: black; color: white;}
+    to {transform: translateY(0rem);}
+}
+
+.thisGoesDown {
+    animation-name: downwards;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftwards {
+    from {transform: translateX(0rem); background-color: black; color: white;}
+    to {transform: translateX(-6rem);}
+}
+
+.thisGoesLeft {
+    animation-name: leftwards;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+/* I could have used animation-direction: reverse here*/
+@keyframes rightwards {
+    from {transform: translateX(0rem); background-color: black; color: white;}
+    to {transform: translateX(6rem);}
+}
+
+.thisGoesRight {
+    animation-name: rightwards;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+}
