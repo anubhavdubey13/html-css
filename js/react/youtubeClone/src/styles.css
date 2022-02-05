@@ -1,3 +1,16 @@
 * {
   margin: 0;
 }
+
+.MainSection {
+  display: flex;
+  align-items: center;
+}
+
+#Sidebar {
+  flex: 0.2;
+}
+
+#Recommended {
+  flex: 0.8;
+}

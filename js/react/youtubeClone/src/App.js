@@ -1,36 +1,20 @@
 import React from "react";
 import "./styles.css";
 import Header from "./Header/Header";
+import Sidebar from "./Sidebar/Sidebar";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header />
+        <div className="MainSection">
+          <Sidebar id="Sidebar" />
+          <h2 id="Recommended">Here goes the recommended section</h2>
+        </div>
         {/* Header */}
         {/* Sidebar */}
         {/* Main */}
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-        <h1>Hello CodeSandbox</h1>
-
-        <h2>Start editing to see some magic happen!</h2>
       </div>
     );
   }
