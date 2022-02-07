@@ -1,0 +1,31 @@
+.SubsExp {
+  border: 1px solid black;
+  padding: 5px;
+  max-width: 70%;
+  margin: 0 auto;
+  height: 12rem;
+}
+
+.name,
+.email {
+  margin-bottom: 10px;
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 20px;
+}
+
+.btnSubscribe {
+  margin-bottom: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 4px;
+  background-color: white;
+}
+
+.checkIcon {
+  color: green;
+  min-width: 5rem;
+  min-height: 4rem;
+}
