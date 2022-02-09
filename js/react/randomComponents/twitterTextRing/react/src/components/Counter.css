@@ -1,0 +1,8 @@
+circle {
+  fill: none;
+  stroke-width: 3;
+}
+
+#gray {
+  stroke: lightgray;
+}
