@@ -10,6 +10,7 @@ header {
     border: 1px solid black;
     max-width: 90%;
     margin: 2rem auto;
+    height: 30rem;
 }
 
 .thisGoesUp, .thisGoesDown, .thisGoesLeft, .thisGoesRight {
@@ -112,4 +113,87 @@ header {
     animation-duration: 1s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
+}
+
+/*---------------Part 3 Animations -------------*/
+.ballMovement {
+    text-align: center;
+}
+
+.ball {
+    position: absolute;
+}
+
+.first, .second, .third, .fourth, .fifth {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+@keyframes ballDiagDown {
+    0% {transform:translate(0, 0); background-color: aqua;}
+    25% {transform: translate(-20.5rem, 15rem); background-color: blue;}
+    50% {transform: translate(0rem, 28.8rem); background-color: aquamarine;}
+    75% {transform: translate(19.5rem, 15rem); background-color: blue;}
+    100% {transform: translate(0, 0); background-color: aqua;}
+}
+
+.first {
+    animation-name: ballDiagDown;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ballDiagSlant {
+    0% {transform:translate(0, 0); background-color: orange;}
+    20% {transform: translate(-20.5rem, 5.7rem); background-color: red;}
+    40% {transform: translate(19.5rem, 11.4rem); background-color: orange;}
+    60% {transform: translate(-20.5rem, 17.1rem); background-color: red;}
+    80% {transform: translate(19.5rem, 22.8rem); background-color: orange;}
+    100% {transform: translate(-20.5rem, 28.5rem); background-color: red;}
+}
+
+.second {
+    animation-name: ballDiagSlant;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.third {
+    animation-name: ballDiagSlant;
+    animation-duration: 8s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ballStar {
+    0% {transform:translate(0, 0); background-color: greenyellow;}
+    20% {transform: translate(-17.5rem, 28.5rem); background-color: green;}
+    40% {transform: translate(19.5rem, 15rem); background-color: greenyellow;}
+    60% {transform: translate(-19.5rem, 15rem); background-color: green;}
+    80% {transform: translate(17.5rem, 28.5rem); background-color: greenyellow;}
+    100% {transform: translate(0rem, 0rem); background-color: green;}
+}
+
+.fourth {
+    animation-name: ballStar;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.fifth {
+    animation-name: ballStar;
+    animation-duration: 8s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
