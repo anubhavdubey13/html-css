@@ -45,6 +45,44 @@ var arrayMethods = {
       };
     });
     return diffArr;
+  },
+
+  // 5. _.differenceBy(array, [values], [iteratee=_.identity])
+  // This method is like _.difference except that it accepts iteratee which is invoked for each element of array and values to generate the criterion by which they're compared. The order and references of result values are determined by the first array. The iteratee is invoked with one argument:(value).
+
+  // Currently doesn't work for objects
+  differenceBy(array, values, iteratee){
+    var diffArr = [];
+    var newVal = values.map(element => iteratee(element))
+    array.forEach(element => {
+      if(!(newVal.includes(iteratee(element)))){
+        diffArr.push(element);
+      };
+    });
+    return diffArr;
+  },
+
+  // 6. _.differenceWith(array, [values], [comparator])
+
+  // This method is like _.difference except that it accepts comparator which is invoked to compare elements of array to values. The order and references of result values are determined by the first array. The comparator is invoked with two arguments: (arrVal, othVal).
+
+  differenceWith(array, values, comparator){
+    var diffArr = [];
+    var counter = 0;
+    array.forEach(a => {
+      values.forEach(b => {
+        //console.log(Object.keys(a), Object.keys(b));
+        if(comparator(a, b) === true){
+          counter += 1;
+          // deep equal issue here
+        };
+        if(counter === 0){
+          diffArr.push(a);
+        };
+      });
+      counter = 0;
+    });
+    return diffArr;
   }
 };
 
