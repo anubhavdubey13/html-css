@@ -30,10 +30,39 @@ console.log(arrayMethods.differenceBy([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x
 */
 
 // 6. DifferenceWith
+/*
 var comparatorFunc = require('./misc.js');
 
 var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
  
 console.log(arrayMethods.differenceWith(objects, [{ 'x': 1, 'y': 2 }], comparatorFunc.isEqual));
 // => [{ 'x': 2, 'y': 1 }]
+*/
 
+// 7. Drop
+/*
+console.log(arrayMethods.drop([1, 2, 3]));
+// => [2, 3]
+ 
+console.log(arrayMethods.drop([1, 2, 3], 2));
+// => [3]
+ 
+console.log(arrayMethods.drop([1, 2, 3], 5));
+// => []
+ 
+console.log(arrayMethods.drop([1, 2, 3], 0));
+// => [1, 2, 3]
+*/
+
+// 7. DropRight
+console.log(arrayMethods.dropRight([1, 2, 3]));
+// => [1, 2]
+ 
+console.log(arrayMethods.dropRight([1, 2, 3], 2));
+// => [1]
+ 
+console.log(arrayMethods.dropRight([1, 2, 3], 5));
+// => []
+ 
+console.log(arrayMethods.dropRight([1, 2, 3], 0));
+// => [1, 2, 3]

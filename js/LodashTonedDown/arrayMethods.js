@@ -83,6 +83,20 @@ var arrayMethods = {
       counter = 0;
     });
     return diffArr;
+  },
+
+  // 7. _.drop(array, [n=1])
+  // Creates a slice of array with n elements dropped from the beginning.
+  drop(array, n=1){
+    return array.slice(n);
+  },
+
+  // 8. _.dropRight(array, [n=1])
+  // Creates a slice of array with n elements dropped from the end.
+
+  dropRight(array, n=1){
+    var arrLen = array.length;
+    return arrLen > n ? array.slice(0,arrLen-n) : [];
   }
 };
 
