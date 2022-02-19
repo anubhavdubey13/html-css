@@ -1,0 +1,10 @@
+.inputComp {
+    margin: 10px;
+  }
+  
+  input {
+    margin: 10px;
+    border: 2px solid blue;
+    font-size: large;
+  }
+  
