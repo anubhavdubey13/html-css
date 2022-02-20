@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import Header from "./Header/Header";
 import Sidebar from "./Sidebar/Sidebar";
+import Recommendation from "./Recommendations/Recommendation";
 
 class App extends React.Component {
   render() {
@@ -10,11 +11,8 @@ class App extends React.Component {
         <Header />
         <div className="MainSection">
           <Sidebar id="Sidebar" />
-          <h2 id="Recommended">Here goes the recommended section</h2>
+          <Recommendation id="Recommended" />
         </div>
-        {/* Header */}
-        {/* Sidebar */}
-        {/* Main */}
       </div>
     );
   }

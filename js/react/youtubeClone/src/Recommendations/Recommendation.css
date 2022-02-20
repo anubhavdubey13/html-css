@@ -1,0 +1,30 @@
+.Recs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    max-width: 80%;
+    border: 1px solid black;
+  }
+  
+  .videoTile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  #thumbnail {
+    height: 10rem;
+    width: 15rem;
+  }
+  
+  .description {
+    display: flex;
+    margin: 5px 0;
+  }
+  
+  .title {
+    margin-left: 5px;
+  }
+  
