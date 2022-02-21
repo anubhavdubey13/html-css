@@ -1,6 +1,7 @@
 import "./styles.css";
 import Button from "./components/button/Button";
 import InputNew from "./components/inputNew/InputNew";
+import Checkbox from "./components/checkbox/Checkbox";
 
 export default function App() {
   return (
@@ -46,6 +47,11 @@ export default function App() {
           label={"Date"}
           helpertext={"This accepts date input"}
         />
+      </div>
+      <h2>Section: Input</h2>
+      <div className="checkboxes">
+        <Checkbox label={"unchecked box"} name={"unchecked"} />
+        <Checkbox label={"checked box"} name={"checked"} checked={true} />
       </div>
     </div>
   );
