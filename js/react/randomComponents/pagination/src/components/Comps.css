@@ -1,0 +1,21 @@
+#item {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  margin: 10px 5px;
+}
+
+.paginate {
+  display: flex;
+  justify-content: center;
+}
+
+#nums {
+  border: 1px solid black;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+}
+
+#nums:hover {
+  cursor: pointer;
+}
