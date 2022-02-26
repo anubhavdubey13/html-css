@@ -1,0 +1,84 @@
+:root {
+    --fontColor: violet;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    margin: 8rem auto;
+    border: 1px solid black;
+    background-image: linear-gradient(40deg, rgb(255, 0, 0), rgb(241, 42, 158));
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.one-one {
+    position: absolute;
+    z-index: 1;
+    margin: 108px 105px;
+    width: 50px;
+    height: 17px;
+    transform:rotate(-50deg);
+    background-color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.one-two {
+    position: absolute;
+    z-index: 10;
+    margin: 135px 91px;
+    width: 100px;
+    height: 20px;
+    transform:rotate(-90deg);
+    background-color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.zero-one {
+    position: absolute;
+    z-index: 5;
+    margin: 100px 145px;
+    width: 60px;
+    height: 50px;
+    transform:rotate(-90deg);
+    border: 15px solid  var(--fontColor);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.zero-two {
+    position: absolute;
+    z-index: 1;
+    margin: 100px 220px;
+    width: 60px;
+    height: 50px;
+    transform:rotate(-90deg);
+    border: 15px solid  var(--fontColor);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.contains100 {
+    width: 400px;
+    height: 200px;
+    margin: 5px 40px;
+    
+}
+
+.containsDays {
+    color: var(--fontColor);
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 170px;
+    
+}
+
+.containsWar {
+    color: var(--fontColor);
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 190px;
+}
