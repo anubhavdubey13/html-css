@@ -1,0 +1,70 @@
+.container {
+    width: 400px;
+    height: 300px;
+    margin: 8rem auto;
+    background-color: green;
+}
+
+.center {
+    width:50%;
+    height:50%;
+    transform: translate(6rem, 5rem);
+    border: 1px solid black;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3.5rem;
+}
+
+.line-1, .line-2, .line-3 {
+    width: 80px;
+    height: 8px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@keyframes line-1-round-1 {
+    0% {transform: translate(0, 0)}
+    50% {transform: translate(0, 17px)}
+    100% {transform: rotate(-45deg) translate(-10px, 15px);}
+}
+
+@keyframes line-3-round-1 {
+    0% {transform: translate(0,0);}
+    50% {transform: translate(0,-17px)}
+    100% {transform: rotate(45deg) translate(-10px, -15px); z-index: 10; 
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);}
+}
+
+.menu-icon:hover >
+.line-1 {
+    animation-name: line-1-round-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-icon:hover >
+.line-3 {
+    animation-name: line-3-round-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line-2-merge-1 {
+    to {
+        visibility:hidden;
+    }
+}
+
+
+.menu-icon:hover >
+.line-2 {
+    animation-name: line-2-merge-1;
+    animation-delay: 0.5s;
+    animation-duration: 0s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
