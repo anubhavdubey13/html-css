@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+.frame {
+    display: flex;
+}
+
+.sidebar {
+    background-color: black;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    margin: 8rem 2rem;
+}
+
+.sticky > a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-top: 1rem;
+}
